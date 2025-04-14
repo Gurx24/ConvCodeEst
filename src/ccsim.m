@@ -16,7 +16,7 @@ clc; clear; close all;
 
 nd  = 30000;            % number of data
 cl  = [2 3];            % constraint length
-ber = 0.005;            % bit error rate
+ber = 0.000;            % bit error rate
 % g1  = 1;              % generator polynomial of 1st
 % g2  = 53;             % generator polynomial of 2st
 % g3  = 137;            % generator polynomial of 3st
