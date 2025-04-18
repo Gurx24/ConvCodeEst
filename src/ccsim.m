@@ -23,7 +23,7 @@ ber = 0.000;            % bit error rate
 
 %*********************** Data generation **************************
 
-data = rand(1, nd) > 0.5;                  % data generation
+data = rand(1, nd) > 0.5;              % data generation
 
 %******************* Convolutional encodding **********************
 
@@ -39,7 +39,7 @@ rcw  = xor(codedata, mask);     % received codeword with errors
 
 %********************* Parameters estimation ***********************
 
-% rcw          = rcw(3:end);
+rcw          = rcw(2:end);          % synchronization position
 [n, na]      = cclbr(rcw);          % L : code length
 [t, k, L, H] = ccpbr(rcw, n, na);   % H : check matrix
                                     % t : synchronization position
