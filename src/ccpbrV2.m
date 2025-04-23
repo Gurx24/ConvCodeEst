@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%% ccpbr.m %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% ccpbrV2.m %%%%%%%%%%%%%%%%%%%%%%%%
 %
 % This program is used for blind recognition of 
 % convolutional code parameters including 
@@ -7,7 +7,7 @@
 %
 % date: 2025.3.12  GuRX
 %
-% [t, k, L, H] = ccpbr(r, n, na)
+% [t, k, L, H] = ccpbrV2(r, n, na)
 %
 % ******************************************
 % r  : received sequence with errors
