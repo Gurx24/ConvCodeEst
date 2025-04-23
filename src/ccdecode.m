@@ -1,20 +1,20 @@
-%%%%%%%%%%%%%%%%%%%%% ccdecide.m %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% ccdecode.m %%%%%%%%%%%%%%%%%%%%
 %
 % Convolutional code decode by parameters of 
-% estimation viterbi decoding
+% estimation using Viterbi algorithm.
 % 
-% date:2025.3.19  GuRX
+% date:2025.4.23  GuRX
 %
-% output = ccdecode(input, H, L)
+% od = ccdecode(id, H, L)
 %
 % **************************************************
-% input  : data of input
-% H      : check matrix
-% L      : constraint length
-% output : data after viterbi decode
+% id  : data of input
+% H   : check matrix
+% L   : constraint length
+% od  : output data after viterbi decode
 % **************************************************
 
-function output = ccdecode(input, H, L)
+function od = ccdecode(id, H, L)
 
 estg1 = H(end:-2:1);
 estg2 = H(end-1:-2:1);
@@ -34,6 +34,6 @@ octg2 = str2double(strg2);
 estgenploy = [octg1, octg2];
 trellis    = poly2trellis(L+1, estgenploy);
 tbdepth    = 34; % Traceback depth for Viterbi decoder
-output     = vitdec(input, trellis, tbdepth, 'trunc', 'hard');
+od     = vitdec(id, trellis, tbdepth, 'trunc', 'hard');
 
 %************************ end of file ********************************
