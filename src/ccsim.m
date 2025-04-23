@@ -37,11 +37,12 @@ rcw  = xor(codedata, mask);     % received codeword with errors
 %********************* Parameters estimation ***********************
 
 rcw          = rcw(2:end);
-[n, na]      = cclbr(rcw);          % L : code length
-[t, k, L, H] = ccpbr(rcw, n, na);   % H : check matrix
-                                    % t : synchronization position
-                                    % k : number of input port and
-                                    % L : constraint length
+[n, na]      = cclbr(rcw);           % L : code length
+[t, k, L, H] = ccpbrV2(rcw, n, na);  % H : check matrix
+                                     % t : synchronization position
+                                     % k : number of input port and
+                                     % L : constraint length
+% [k, L, H]    = ccpbrV1(rcw, n, na);
 
 %******************* Convolutional code decoding *******************                                
 
