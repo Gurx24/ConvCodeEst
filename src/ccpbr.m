@@ -29,14 +29,13 @@ for i  = [na, na-n]
     for k = 1 : n-1
         for Z = 1 : n-k
             L = i/n * (n-k) - Z;
+            l = (L+1) * n;
+            u = 100;
             for t = 1 : n
-                l    = (L+1) * n;
-                u    = 100;
                 rt   = r(t:t+u*l-1);
                 Rl   = reshape(rt, [l,u]).';
-                flag = zeros(n-k, 1);       % flag bit
+                flag = zeros(n-k, 1);                  % flag bit
                 for s = 1 : n - k
-                    l   = (L+1) * (k+1);
                     idx = [1:k k+s];
                     for ii = 1 : L
                         idx = [idx, ii*n+1:ii*n+k, ii*n+k+s];
@@ -48,10 +47,11 @@ for i  = [na, na-n]
                         Rs   = Rs(ridx, :);            % randomly swap rows
                         w    = w + 1;
                         [~, Xs, Bs] = gjetp(Rs);
-                        Xl   = Xs(l+1:end, :);
+                        ll   = size(Bs, 1);
+                        Xl   = Xs(ll+1:end, :);
                         W    = sum(Xl);
-                        for j = 1 : l
-                            if W(j) < (u-l)/2 * beta && Bs(l,j) == 1
+                        for j = 1 : ll
+                            if W(j) < (u-ll)/2 * beta && Bs(ll,j) == 1
                                 H(s, :) = Bs(:, j).';
                                 flag(s) = 1;
                             end
@@ -65,12 +65,6 @@ for i  = [na, na-n]
         end
     end
 end
-
-% if i > na - n
-%     continue;
-% else
-%     break;
-% end
 
 %************************ end of file *****************************
 
