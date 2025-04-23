@@ -1,3 +1,23 @@
+%%%%%%%%%%%%%%%%%%%%% ccpbr_1.m %%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This program is used for blind recognition of 
+% convolutional code parameters including 
+% input numbers, constraint length and check matrix.
+%
+% date: 2025.4.18  GuRX
+%
+% [k, L, H] = ccpbr(r, n, na)
+%
+% ******************************************
+% r  : received sequence with errors
+% n  : number of output port
+% na : the smallest column value of
+%      observation matrix rank deficit
+% k  : number of input port
+% L  : constraint length
+% H  : check matrix
+% ******************************************
+
 function [k, L, H] = ccpbr_1(r, n, na)
 
 beta = 0.3;                                 % threshold
