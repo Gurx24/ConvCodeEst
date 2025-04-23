@@ -43,6 +43,10 @@ rcw          = rcw(2:end);
                                      % k : number of input port and
                                      % L : constraint length
 
+disp('Convolutional code parameter identification completed!');
+fprintf('n = %d\nk = %d\nL = %d\nt = %d\n', n, k, L, t);
+disp(['H = ',mat2str(H)]);
+
 % [k, L, H]    = ccpbrV1(rcw, n, na);
 
 %******************* Convolutional code decoding *******************                                
