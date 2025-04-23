@@ -20,7 +20,7 @@
 % H  : check matrix
 % ******************************************
 
-function [t, k, L, H] = ccpbr(r, n, na)
+function [t, k, L, H] = ccpbrV2(r, n, na)
 
 beta = 0.3;                                 % threshold
 H    = [];                                  % check matrix
