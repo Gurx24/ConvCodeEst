@@ -92,5 +92,5 @@ $X_{low}$为矩阵X从$l+1$行到最后的矩阵。在无误码环境下，如�
 ## 参考文献
 
 [^1]: Marazin, M., Gautier, R. & Burel, G. Blind recovery of *k/n* rate convolutional encoders in a noisy environment. *J Wireless Com Network* **2011**, 168 (2011).
-[^3 ]:Y. Xu, Y. Zhong and Z. Huang, "An Improved Blind Recognition Method of the Convolutional Interleaver Parameters in a Noisy Channel," in IEEE Access, vol. 7, pp. 101775-101784, 2019, doi: 10.1109/ACCESS.2019.2930663. 
+[^2 ]:Y. Xu, Y. Zhong and Z. Huang, "An Improved Blind Recognition Method of the Convolutional Interleaver Parameters in a Noisy Channel," in IEEE Access, vol. 7, pp. 101775-101784, 2019, doi: 10.1109/ACCESS.2019.2930663. 
 [^3]: Y. Ding, Z. Huang and J. Zhou, "An Improved Blind Recognition Method for Synchronization Position and Coding Parameters of k/n Rate Convolutional Codes in a Noisy Environment," in IEEE Access, vol. 8, pp. 171305-171315, 2020, doi: 10.1109/ACCESS.2020.3025177.
