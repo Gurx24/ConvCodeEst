@@ -33,12 +33,13 @@ for l = 2 : lm
     end
 end
 
+idx = find(n);
+na  = idx(1);
+n   = mode(diff(idx));
+
 figure;
 stem(n);
 xlabel('column $l$', 'Interpreter', 'latex');
 ylabel('number of correlated columns');
-idx = find(n);
-na  = idx(1);
-n   = idx(2) - idx(1);
 
 %******************** end of file *******************
