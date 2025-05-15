@@ -37,7 +37,7 @@ rcw  = xor(codedata, mask);          % received codeword with errors
 %********************* Parameters estimation ***********************
 
 rcw          = rcw(2:end);
-[n, na]      = cclbr(rcw);           % L : code length
+[n, na]      = cclbr(rcw);           % n : code length
 [t, k, L, H] = ccpbrV2(rcw, n, na);  % H : check matrix
                                      % t : synchronization position
                                      % k : number of input port and
