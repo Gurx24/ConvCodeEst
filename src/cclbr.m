@@ -33,10 +33,10 @@ for l = 2 : lm
     end
 end
 
-figure;
-stem(n);
-xlabel('column $l$', 'Interpreter', 'latex');
-ylabel('number of correlated columns');
+% figure;
+% stem(n);
+% xlabel('column $l$', 'Interpreter', 'latex');
+% ylabel('number of correlated columns');
 
 idx = find(n);
 na  = idx(1);
