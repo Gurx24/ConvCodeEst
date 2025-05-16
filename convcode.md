@@ -116,7 +116,7 @@ $$
 
 ### 1、删余卷积码(Punctured Convolutional Codes)
 
-​	暂未使用
+​	参考《数字通信》
 
 ### 2、终止(Terminated)
 
@@ -150,9 +150,13 @@ $$
 
 - 递归卷积码咬尾编码
 
-  暂未涉及
-
-
+  ![RSC咬尾编码(2)](./data/pictures/卷积码/RSC咬尾编码(1).png)
+  
+  ![RSC咬尾编码(3)](./data/pictures/卷积码/RSC咬尾编码(2).png)
+  
+  ![RSC咬尾编码(4)](./data/pictures/卷积码/RSC咬尾编码(3).png)
+  
+  ![RSC咬尾编码(1)](./data/pictures/卷积码/RSC咬尾编码(4).png)
 
 
 
